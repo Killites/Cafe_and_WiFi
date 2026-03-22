@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe and Wifi</title>
+    <link rel = "stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<h1> ☕ Cafe with WiFi & Power for Remote Working 💻</h1>
+<p style="text-align: center; color:#6f4e37;">
+    Find the perfect place to work, sip coffee, and stay productive ☕ 📈
+</p>
+{% for cafe in cafes %}
+    <div>
+        <p><b>Name:</b>{{ cafe[1] }}</p>
+        <p><b>Location:</b>
+            <a href="{{ cafe[2] }}" target="_blank">📍 Open in Maps</a></p>
+
+        <a href="/delete/ {{ cafe[0] }}">Delete</a>
+        <hr>
+    </div>
+{% endfor %}
+<a href="/add">➕ Add New Cafe</a>
+
+</body>
+</html>

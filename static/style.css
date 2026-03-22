@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3e9dc; /* cream coffee */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #4b2e2e; /* coffee brown */
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #6f4e37;
+  margin-bottom: 25px;
+}
+
+/* Cafe cards */
+div {
+  background: #fffaf3; /* latte */
+  padding: 20px;
+  margin: 15px auto;
+  width: 60%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(75, 46, 46, 0.2);
+  border-left: 5px solid #a5d6a7; /* light matcha accent */
+}
+
+/* Text */
+p {
+  margin: 6px 0;
+  color: #3e2723;
+}
+
+/* Links (buttons) */
+a {
+  text-decoration: none;
+  color: white;
+  background-color: #6f4e37;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+a:hover {
+  background-color: #5a3d2b;
+}
+
+/* Add button */
+.add-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #81c784; /* matcha green */
+  color: white;
+  border-radius: 10px;
+}
+
+.add-btn:hover {
+  background-color: #66bb6a;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  width: 260px;
+  margin-bottom: 12px;
+  border: 1px solid #d7ccc8;
+  border-radius: 6px;
+  background-color: #fffaf3;
+}
+
+/* Buttons */
+button {
+  padding: 10px 15px;
+  background-color: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Subtle side decoration */
+body::before {
+  content: "🍵";
+  position: fixed;
+  left: 15px;
+  top: 40%;
+  font-size: 28px;
+  opacity: 0.2;
+}
+
+body::after {
+  content: "🌿";
+  position: fixed;
+  right: 15px;
+  top: 60%;
+  font-size: 28px;
+  opacity: 0.2;
+}
